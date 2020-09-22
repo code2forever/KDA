@@ -6,15 +6,15 @@
 
 @font-face{
     font-family: amaze;
-    src: url("fonts/bakery.ttf"); 
+    src: url("Fonts/bakery.ttf"); 
 }
 @font-face{
     font-family: fanta;
-    src: url("fonts/bitechocolate.ttf"); 
+    src: url("Fonts/bitechocolate.ttf"); 
 }
 @font-face{
     font-family: logo;
-    src: url("fonts/aquirebold.otf");
+    src: url("Fonts/aquirebold.otf");
 }
 #navbar{
     padding:0.3rem 3rem;
