@@ -1,14 +1,14 @@
 @font-face{
     font-family: fanta;
-    src: url("Fonts/bitechocolate.ttf"); 
+    src: url("/Fonts/bitechocolate.ttf"); 
 }
 @font-face{
     font-family: logo;
-    src: url("Fonts/aquirebold.otf");
+    src: url("/Fonts/aquirebold.otf");
 }
 @font-face{
     font-family: para;
-    src: url("Fonts/capsmall.ttf");
+    src: url("/Fonts/capsmall.ttf");
 }
 .container{
     display: flex;
