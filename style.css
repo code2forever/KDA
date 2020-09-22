@@ -5,15 +5,15 @@
 }
 
 @font-face{
-    font-family: amaze;
+    font-family:amaze;
     src: url("Fonts/bakery.ttf"); 
 }
 @font-face{
-    font-family: fanta;
+    font-family:fanta;
     src: url("Fonts/bitechocolate.ttf"); 
 }
 @font-face{
-    font-family: logo;
+    font-family:logo;
     src: url("Fonts/aquirebold.otf");
 }
 #navbar{
