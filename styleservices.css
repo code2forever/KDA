@@ -94,29 +94,29 @@
 @media screen and (max-width:480px) and (min-width:300px){
     #services{
         width: 95vw;
-        height: 185vw;
+        height: 195vw;
         margin:20px auto 10px auto;
 }
     #hard{
         width: 95vw;
-        height: 185vw;
+        height: 195vw;
     }
     #services h2, #hard h2{
         font-size: 2.7vw;
     }
     .cardbox{
         flex-direction: column;
-        flex-basis: 95vw;
+        flex-basis: 170vw;
         width: 90vw;
     }
     #services .cards{
-        flex-basis: 50vw;
+        flex-basis: 55vw;
         width: 86vw;
         border-bottom: 5px solid rgb(168, 199, 29);
         border-top: 5px solid rgb(173, 199, 29);
     }
     #hard .cards{
-        flex-basis:50vw ;
+        flex-basis:55vw ;
         width:86vw;
         border-bottom: 5px solid rgb(245, 25, 25);
         border-top: 5px solid rgb(245, 25, 25);
