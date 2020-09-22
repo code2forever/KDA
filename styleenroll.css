@@ -1,0 +1,136 @@
+@font-face{
+    font-family: ultron;
+    src: url("fonts/aquirebold.otf");
+}
+@font-face{
+    font-family: xonas;
+    src: url("fonts/capsmallclean.ttf");
+}
+
+.container{
+    margin:35px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height:58vmin;
+}
+h2{
+    text-align: center;
+    margin:20px 0px;
+    font-family: ultron;
+    font-size: 4vmin;
+}
+form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.myinput{
+    flex-basis: 5.5vh;
+    width: 30vw;
+    border:3px solid rgba(238, 114, 92, 0.876);
+    margin: 10px 0px;
+    border-radius: 10px;
+    font-family: xonas;
+    font-size: 1.2vw;
+    padding: 0px 20px;
+}
+.myinput:hover,.textarea:hover{
+    border:3px solid rgb(246, 73, 5);
+    cursor: pointer;
+}
+.myinput:focus,.textarea:focus{
+    border:3px solid rgba(8, 6, 4, 0.657);
+    outline: none;
+    cursor: text;
+}
+.myinput::placeholder{
+    text-align: center;
+}
+.textarea::placeholder{
+    text-align: center;
+    line-height: 105px;
+}
+.textarea{
+    flex-basis: 20vh;
+    width: 30vw;
+    border:3px solid rgba(238, 114, 92, 0.876);
+    margin: 10px 0px;
+    border-radius: 10px;
+    font-family: xonas;
+    font-size: 1.2vw;
+    padding:5px 20px;
+}
+
+.btn{
+    text-align: center;
+    width: 100px;
+    height: 35px;
+    background-color: tomato;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    box-shadow:-2px -2px 5px 0px #ffffff,4px 4px 0px 0px rgb(28, 29, 31);
+    margin: 10px 0px;
+    font-family: xonas;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.btn:focus{
+    outline: none;
+    border: none;
+    box-shadow:inset 3px 3px 5px 0px rgb(28, 29, 31) ,inset -3px -3px 10px 1px #ffffffa9;
+}
+
+/* For iPads */
+@media screen and (max-width:1024px) and (min-width:768px){
+    h2{
+        font-size: 2.6vw;
+        margin:30px 0px;
+    }
+    .myinput{
+        flex-basis: 40px;
+        width: 300px;
+        font-size: 13px;
+    }
+    .textarea{
+        flex-basis: 155px;
+        width: 300px;
+        font-size: 13px;
+    }
+    .textarea::placeholder{
+        line-height: 140px;
+        font-size: 13px;
+    }
+    .btn{
+        width: 85px;
+    }
+
+}
+/* For Smartphones */
+@media screen and (max-width:480px) and (min-width:300px){
+    .myinput{
+        flex-basis: 4vh;
+        width: 50vw;
+        font-size: 2.8vw;
+    }
+    .myinput::placeholder{
+        font-size: 2.2vw;
+    }
+    .textarea{
+        flex-basis: 18.7vh;
+        width: 50vw;
+        font-size: 2.8vw;    
+    }
+    .textarea::placeholder{
+        line-height: 17vh;
+    }
+    .btn{
+        font-size: 11px;
+        width: 70px;
+        height:26px;
+    }    
+}

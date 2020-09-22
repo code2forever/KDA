@@ -1,0 +1,168 @@
+@font-face{
+    font-family: fanta;
+    src: url("fonts/bitechocolate.ttf"); 
+}
+@font-face{
+    font-family: logo;
+    src: url("fonts/aquirebold.otf");
+}
+@font-face{
+    font-family: para;
+    src: url("fonts/capsmall.ttf");
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 20px;
+}
+.container .banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: logo;
+    font-size: 8.5vmin;   
+    width: 100%;
+    height: 23vw;
+    background:center/cover no-repeat rgba(155, 226, 24, 0.548) url("dancers12.jpg");
+}
+.banner span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.banner span a{
+    color:tomato;
+    text-decoration: none;
+    transition:color 1s ease;
+    cursor: pointer;
+}
+.banner span a:hover{
+    color: rgba(17, 221, 112, 0.794);
+}
+.container p{
+    color: rgba(104, 87, 87, 0.877);
+    font-size: 3vmin;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 20px 0px;
+    text-align: center;
+    word-spacing: 0.3rem;
+}
+.container p:nth-of-type(1)::first-letter{
+    line-height: 0px;
+    color: tomato;
+    font-size: 8vmin;
+    font-weight: 600;
+    word-spacing: 100px;
+    margin:0px 4px;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+    width: 100%;
+}
+#about h2{
+    text-align: center;
+    font-family: fanta;
+    color: tomato;
+    font-size: 2vw;
+}
+.cardbox{
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+    width: 100%;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid black;
+    color: blanchedalmond;
+    margin: 10px 10px;
+    font-family: logo;
+    font-size: 1.3vw;
+    width: 28vw;
+    height: 17vw;
+}
+.cards:hover{
+    transition:transform 0.7s ease-in-out;
+    transform:rotateZ(360deg) scale(1.3) translateY(-80px);
+}
+.cards:nth-of-type(1){
+    background:center/cover no-repeat rgba(155, 226, 24, 0.548) url("dancers5.jpg");
+    cursor: pointer;
+}
+.cards:nth-of-type(2){
+    background:center/cover no-repeat rgba(155, 226, 24, 0.548) url("dancers6.jpg");
+    cursor: pointer;
+}
+.cards:nth-of-type(3){
+    background:center/cover no-repeat rgba(155, 226, 24, 0.548) url("dancers.jpg");
+    cursor: pointer;
+}
+/* For iPads */
+@media screen and (max-width:1024px) and (min-width:768px){ 
+    .container p{
+        font-size: 20px;
+    }
+    .banner span a{
+        font-size: 40px;
+    }
+    .container p:nth-of-type(1)::first-letter{
+        font-size: 40px;
+    }
+}
+/* for smartphones */
+@media screen and (max-width:480px) and (min-width:300px){
+    .container{
+        margin-bottom: 10px;
+    }
+    .container p{
+        word-spacing: 0.2rem;
+        margin: 10px 10px;
+    }
+    .container .banner{
+        height: 24vw;
+        margin-bottom: 20px;
+    }
+    .container p:nth-of-type(1)::first-letter{
+        font-size: 20px;
+    }
+    #about{
+        margin: 10px auto;
+    }
+    .cardbox{
+        margin: 0px auto;
+    }
+    .cards{
+        width: 80vw;
+        height: 55vw;
+        font-size: 3.3vw;
+    }
+    .cards:hover{
+        transition:transform 0.6s ease;
+        transform:scale(1.1);
+    }
+    .cards h3{
+        width: 50%;
+    }
+    #about h2{
+        font-size: 2.9vw;
+    }
+    .cardbox{
+        flex-direction: column;
+    }
+}

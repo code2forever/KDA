@@ -1,0 +1,33 @@
+.container{
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin: 25px 0px;
+    color: tomato;
+}
+/* For iPads */
+@media screen and (max-width:1024px) and (min-width:768px){
+    .container{
+        margin: 180px auto;
+    }
+    h2{
+        margin: 10px 0px;
+        font-size: 2.2vw;
+    }
+}
+/* For Smartphones */
+@media screen and (max-width:480px) and (min-width:300px){
+    .container{
+        margin: 50px auto;
+    }
+    h2{
+        margin:10px auto;
+        font-size: 1.8vh;
+    }
+}

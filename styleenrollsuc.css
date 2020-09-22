@@ -1,0 +1,59 @@
+.container{
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin: 25px 0px;
+    color: tomato;
+}
+.btn{
+    text-align: center;
+    width: 80px;
+    height: 30px;
+    margin: 0px 10px;
+    background-color: wheat;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+.btn a{
+    text-decoration: none;
+    color: rgb(22, 224, 117);
+}
+
+/* For iPads */
+@media screen and (max-width:1024px) and (min-width:768px){
+    .container{
+        margin: 180px auto;
+    }
+    h2{
+        margin: 10px 0px;
+        font-size: 2.1vw;
+    }
+    .btn{
+        width: 10.5vw;
+        height: 3vw;
+        font-size: 1.7vw;
+    }
+}
+/* For Smartphones */
+@media screen and (max-width:480px) and (min-width:300px){
+    .container{
+        margin: 50px 10px;
+    }
+    h2{
+        margin:10px auto;
+        font-size: 1.8vh;
+    }
+    .btn{
+        margin: 0px 4px;
+        width: 16vw;
+        height: 3vw;
+        font-size: 2.2vw;
+    }
+}

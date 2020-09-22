@@ -1,0 +1,128 @@
+@font-face{
+    font-family: fanta;
+    src: url("fonts/bitechocolate.ttf"); 
+}
+@font-face{
+    font-family: logo;
+    src: url("fonts/aquirebold.otf");
+}
+
+#services, #hard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 95vw;
+    height: 30vw;
+    margin: auto;
+}
+#services{
+    margin:40px auto 10px auto;
+}
+#hard{
+    margin:0px auto;
+}
+#services h2, #hard h2{
+    text-align: center;
+    color: tomato;
+    font-family: fanta;
+    font-size: 1.7vw;
+    margin:0px auto 10px auto;
+}
+.cardbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-basis: 20vw;
+    width: 95vw;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: 10px 10px;
+    color: blanchedalmond;
+    transition: color 0.8s ease;
+}
+.cards h3{
+    font-size: 1.5vw;
+    font-family: logo;
+    text-align: center;
+}
+.cards:hover{
+    color: rgb(240, 9, 105);
+}
+#services .cards{
+    flex-basis: 26vw;
+    height: 18vw;
+}
+#hard .cards{
+    flex-basis: 32vw;
+    height: 18vw;
+}
+ #services .cards:nth-of-type(1){
+    background:center/cover no-repeat rgba(155, 226, 24, 0.548) url("dancers4.jpg");
+    cursor: pointer;
+}
+#services .cards:nth-of-type(2){
+    background:center/cover no-repeat rgba(155, 226, 24, 0.548) url("dancers7.jpg");
+    cursor: pointer;
+}
+#services .cards:nth-of-type(3){
+    background:center/cover no-repeat rgba(155, 226, 24, 0.548) url("dancers9.jpg");
+    cursor: pointer;
+}
+
+#hard .cards:nth-of-type(1){   
+    background:center/cover no-repeat rgba(155, 226, 24, 0.548) url("dancers10.jpg");
+    cursor: pointer;
+}
+#hard .cards:nth-of-type(2){
+    background:center/cover no-repeat rgba(155, 226, 24, 0.548) url("dancers11.jpg");
+    cursor: pointer;
+}
+#hard .cards:nth-of-type(3){
+    background:center/cover no-repeat rgba(155, 226, 24, 0.548) url("dancers3.jpg");    
+    cursor: pointer;
+}
+/* For Smartphones */
+@media screen and (max-width:480px) and (min-width:300px){
+    #services{
+        width: 95vw;
+        height: 185vw;
+        margin:20px auto 10px auto;
+}
+    #hard{
+        width: 95vw;
+        height: 185vw;
+    }
+    #services h2, #hard h2{
+        font-size: 2.7vw;
+    }
+    .cardbox{
+        flex-direction: column;
+        flex-basis: 95vw;
+        width: 90vw;
+    }
+    #services .cards{
+        flex-basis: 50vw;
+        width: 86vw;
+        border-bottom: 5px solid rgb(168, 199, 29);
+        border-top: 5px solid rgb(173, 199, 29);
+    }
+    #hard .cards{
+        flex-basis:50vw ;
+        width:86vw;
+        border-bottom: 5px solid rgb(245, 25, 25);
+        border-top: 5px solid rgb(245, 25, 25);
+    }
+
+    .cards h3{
+        font-size: 3.6vw;
+    }
+}

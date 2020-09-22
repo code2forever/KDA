@@ -1,0 +1,292 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: amaze;
+    src: url("fonts/bakery.ttf"); 
+}
+@font-face{
+    font-family: fanta;
+    src: url("fonts/bitechocolate.ttf"); 
+}
+@font-face{
+    font-family: logo;
+    src: url("fonts/aquirebold.otf");
+}
+#navbar{
+    padding:0.3rem 3rem;
+    font-family:logo;
+    font-size: 1.7vw;
+    background-color: rgb(65, 60, 60);
+}
+#logo{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+#logo img{
+    cursor: pointer;
+    height: 3vw;
+    filter: invert(1);
+    transition: transform 1.5s;
+}
+
+#logo img:hover{
+    filter:brightness(200%);
+    transform: scale(1.3);
+}
+
+#navbar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar li a{
+    text-decoration: none;
+    color:crimson;
+    transition: color 0.5s;
+}
+#navbar li a:hover{
+    color:rgba(236, 173, 26, 0.938);
+}
+#navbar li a:active{
+    color: lawngreen;
+}
+#navbar li{
+    list-style-type:none;
+}
+#introSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: rgb(246, 182, 53);
+    margin: auto;
+    text-align: center;
+    height: 30vw;
+    font-size: 3vw;
+    margin-bottom: 40px;
+    background-blend-mode: screen;
+    background:center/contain no-repeat rgb(79, 212, 157,0.5) url("dance2.jpg");
+}
+#missionSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 98vw;
+    height: 32vw;
+    padding: 10px 0px;
+    margin:auto;
+    text-align: center;
+}
+#missionSection h2{
+    font-family: fanta;
+    font-size: 2vw;
+    text-align: center;
+}
+#missionSection .cardbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 32vw;
+    width: 98vw;
+    text-align: center;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px 20px;
+    border: 4px solid black;
+    flex-basis: 38vw;
+    height: 21vw;
+    border-radius: 10px;
+}
+.card h3{
+    font-size: 1.8vw;
+    text-align: center;
+    text-transform: none
+}
+.card:nth-of-type(1){
+    background-blend-mode: screen;
+    background:center/contain no-repeat rgba(155, 226, 24, 0.548) url("dance1.png");
+}
+.card:nth-of-type(2){
+    background-blend-mode: screen;
+    background:center/contain no-repeat rgb(212, 28, 28) url("dance3.jpg");
+}
+.card:nth-of-type(3){
+    background-blend-mode: screen;
+    background:center/contain no-repeat rgba(19, 193, 216, 0.548) url("dance4.png");
+}
+#sponsorSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 35vw;
+    padding: 10px 0px;
+    margin:auto;
+    text-align: center;
+    color:black;
+}
+#sponsorSection h2{
+    font-size: 2vw;
+    font-family: fanta;
+    text-align: center;
+}
+#sponsorSection .cardbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 24vw;
+    width: 90vw;
+    text-align: center;
+}
+.spons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:20px 20px;
+    border: 4px solid black;
+    flex-basis: 30vw;
+    height: 18vw;
+    border-radius: 10px;
+}
+.spons:nth-of-type(1){
+    background:center/cover no-repeat url("amazon.png");
+}
+.spons:nth-of-type(2){
+    background:center/cover no-repeat url("netflix.png");
+}
+.spons:nth-of-type(3){
+    background:center/cover no-repeat url("oneplus.png");
+}
+
+#footer{
+    height: 9.5vmin;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(238, 34, 34, 0.781);
+    text-align: center;
+    padding: 0px 0px;
+    font-family: logo;
+    font-size: 1.2vw;
+    transition:color 0.5s ease;
+}
+#footer span{
+    transition:color 0.6s ease;
+}
+#footer span:hover{
+    cursor:pointer;
+    color: blanchedalmond;
+}
+@media screen and (max-width:870px){
+    #navbar{
+        font-size: 2vw;
+    }
+    #footer span{
+        font-size: 2vw;
+        /* To make text vertically: */
+        transform: rotate(-90deg);  
+        writing-mode: tb-rl;
+    }
+}
+/* For iPads */
+@media screen and (max-width:1024px) and (min-width:768px){
+    #footer{
+        height: 55px;
+    }
+    #footer span{
+        font-size:13px;
+    }
+}
+/* For Smartphones */
+@media screen and (max-width:480px) and (min-width:300px){
+    #navbar{
+        font-size: 2.5vw;
+    }
+    #navbar ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #navbar ul li{
+        padding: 0.3rem 0px;
+    }
+    #navbar ul #logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #logo img{
+        height: 6vw;
+    }
+    #introSection{
+        height: 52vw;
+        font-size: 3.3vw;
+        margin-bottom: 20px;
+    }
+    #missionSection{
+        width:90vw;
+        height: 200vw;
+    }
+    #missionSection h2{
+        font-size: 3vw;
+    }
+    #missionSection .cardbox{
+        flex-direction: column;
+        width: 85vw;
+        flex-basis: 170vw;
+    }
+    .card{
+        width: 85vw;
+        flex-basis: 50vw;
+        border: none;  /*To make old css none*/
+        border-bottom: 5px solid black;
+        border-top: 5px solid black;
+        border-radius: 5px;
+    }
+    .card h3{
+        font-size: 5vw;
+    }
+    #sponsorSection{
+        width:90vw;
+        height: 180vw;
+    }
+    #sponsorSection h2{
+        font-size: 3vw;
+    }
+    #sponsorSection .cardbox{
+        flex-direction: column;
+        width: 85vw;
+        flex-basis: 170vw;
+    }
+    .spons{
+        width: 85vw;
+        flex-basis: 45vw;
+        border: none;  /*To make old css none*/
+        border-radius: 40px;
+    }
+    .spons:nth-of-type(1){
+        border-bottom: 5px solid rgb(240, 168, 13);
+        border-top: 5px solid rgb(240, 168, 13);
+    }
+    .spons:nth-of-type(2){
+        border-bottom: 5px solid rgb(245, 25, 25);
+        border-top: 5px solid rgb(245, 25, 25);
+    }
+    .spons:nth-of-type(3){
+        border-bottom: 5px solid black;
+        border-top: 5px solid black;
+    }
+}
