@@ -66,28 +66,28 @@
     height: 18vw;
 }
  #services .cards:nth-of-type(1){
-    background:center/cover no-repeat rgba(155, 226, 24, 0.548) url("dancers4.jpg");
+    background:center/cover no-repeat url("dancers4.jpg");
     cursor: pointer;
 }
 #services .cards:nth-of-type(2){
-    background:center/cover no-repeat rgba(155, 226, 24, 0.548) url("dancers7.jpg");
+    background:center/cover no-repeat url("dancers7.jpg");
     cursor: pointer;
 }
 #services .cards:nth-of-type(3){
-    background:center/cover no-repeat rgba(155, 226, 24, 0.548) url("dancers9.jpg");
+    background:center/cover no-repeat url("dancers9.jpg");
     cursor: pointer;
 }
 
 #hard .cards:nth-of-type(1){   
-    background:center/cover no-repeat rgba(155, 226, 24, 0.548) url("dancers10.jpg");
+    background:center/cover no-repeat url("dancers10.jpg");
     cursor: pointer;
 }
 #hard .cards:nth-of-type(2){
-    background:center/cover no-repeat rgba(155, 226, 24, 0.548) url("dancers11.jpg");
+    background:center/cover no-repeat url("dancers11.jpg");
     cursor: pointer;
 }
 #hard .cards:nth-of-type(3){
-    background:center/cover no-repeat rgba(155, 226, 24, 0.548) url("dancers3.jpg");    
+    background:center/cover no-repeat url("dancers3.jpg");    
     cursor: pointer;
 }
 /* For Smartphones */

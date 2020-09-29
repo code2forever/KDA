@@ -23,7 +23,7 @@
     font-size: 8.5vmin;   
     width: 100%;
     height: 23vw;
-    background:center/cover no-repeat rgba(155, 226, 24, 0.548) url("dancers12.jpg");
+    background:center/cover no-repeat url("dancers12.jpg");
 }
 .banner span{
     display: flex;
@@ -98,15 +98,15 @@
     transform:rotateZ(360deg) scale(1.3) translateY(-80px);
 }
 .cards:nth-of-type(1){
-    background:center/cover no-repeat rgba(155, 226, 24, 0.548) url("dancers5.jpg");
+    background:center/cover no-repeat url("dancers5.jpg");
     cursor: pointer;
 }
 .cards:nth-of-type(2){
-    background:center/cover no-repeat rgba(155, 226, 24, 0.548) url("dancers6.jpg");
+    background:center/cover no-repeat url("dancers6.jpg");
     cursor: pointer;
 }
 .cards:nth-of-type(3){
-    background:center/cover no-repeat rgba(155, 226, 24, 0.548) url("dancers.jpg");
+    background:center/cover no-repeat url("dancers.jpg");
     cursor: pointer;
 }
 /* For iPads */
